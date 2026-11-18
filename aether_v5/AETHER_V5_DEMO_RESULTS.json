@@ -1,0 +1,111 @@
+{
+  "invention": {
+    "engine_version": "5.0.0",
+    "task_inventory": [
+      {
+        "task": "square_plus_one",
+        "domain": "polynomial",
+        "split": "train",
+        "expression_size": 4,
+        "eligible_subtree_shapes": 2
+      },
+      {
+        "task": "square_plus_two",
+        "domain": "polynomial",
+        "split": "train",
+        "expression_size": 4,
+        "eligible_subtree_shapes": 2
+      },
+      {
+        "task": "square_plus_five",
+        "domain": "polynomial",
+        "split": "train",
+        "expression_size": 4,
+        "eligible_subtree_shapes": 2
+      },
+      {
+        "task": "heldout_square_plus_nine",
+        "domain": "polynomial",
+        "split": "heldout",
+        "expression_size": 4,
+        "eligible_subtree_shapes": 2
+      },
+      {
+        "task": "absolute_plus_three",
+        "domain": "absolute-value",
+        "split": "train",
+        "expression_size": 4,
+        "eligible_subtree_shapes": 2
+      }
+    ],
+    "search_stats": {
+      "candidate_combinations_examined": 8,
+      "unique_candidates": 1,
+      "search_budget": 20000,
+      "budget_exhausted": false,
+      "min_support": 2
+    },
+    "candidate_count": 1,
+    "candidates": [
+      {
+        "name": "invented_001",
+        "template": "($p1 + (x ** 2))",
+        "parameter_count": 1,
+        "support_tasks": [
+          "square_plus_five",
+          "square_plus_one",
+          "square_plus_two"
+        ],
+        "domains": [
+          "polynomial"
+        ],
+        "parameter_rows": [
+          [
+            1
+          ],
+          [
+            2
+          ],
+          [
+            5
+          ]
+        ],
+        "complexity": 4,
+        "compression_gain": 4,
+        "score": 10
+      }
+    ]
+  },
+  "heldout_validation": {
+    "candidate": "invented_001",
+    "heldout_task_count": 1,
+    "matched_task_count": 1,
+    "verified_matches": 1,
+    "results": [
+      {
+        "task": "heldout_square_plus_nine",
+        "domain": "polynomial",
+        "passed": 7,
+        "total": 7,
+        "verified": true,
+        "subtree_size": 4
+      }
+    ],
+    "research_boundary": "Finite held-out probes validate only the supplied bounded arithmetic DSL; they are not a proof of correctness for all inputs."
+  },
+  "falsification": {
+    "candidate": "invented_001",
+    "source_task": "square_plus_one",
+    "verified": true,
+    "probe_count": 135,
+    "counterexamples": []
+  },
+  "failure_analysis": {
+    "candidates_tested": 1,
+    "verified_candidates": [
+      "invented_001"
+    ],
+    "rejected_candidates": [],
+    "rejection_rate": 0.0
+  }
+}

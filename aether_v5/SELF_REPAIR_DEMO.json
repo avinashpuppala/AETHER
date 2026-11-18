@@ -1,0 +1,83 @@
+{
+  "failure_detected": true,
+  "repair": {
+    "repaired": true,
+    "selected_min_subtree_size": 2,
+    "passed_checks": 16,
+    "total_checks": 16,
+    "macro_count": 2,
+    "candidate_libraries_tested": 3,
+    "candidate_results": [
+      {
+        "min_subtree_size": 2,
+        "verified": true,
+        "passed_checks": 16,
+        "total_checks": 16
+      },
+      {
+        "min_subtree_size": 3,
+        "verified": true,
+        "passed_checks": 16,
+        "total_checks": 16
+      },
+      {
+        "min_subtree_size": 4,
+        "verified": true,
+        "passed_checks": 16,
+        "total_checks": 16
+      }
+    ]
+  },
+  "post_repair_verification": {
+    "verified": true,
+    "results": [
+      {
+        "x": -7,
+        "expected": 58,
+        "predicted": 58,
+        "passed": true
+      },
+      {
+        "x": -2,
+        "expected": 13,
+        "predicted": 13,
+        "passed": true
+      },
+      {
+        "x": 0,
+        "expected": 9,
+        "predicted": 9,
+        "passed": true
+      },
+      {
+        "x": 3,
+        "expected": 18,
+        "predicted": 18,
+        "passed": true
+      },
+      {
+        "x": 8,
+        "expected": 73,
+        "predicted": 73,
+        "passed": true
+      }
+    ],
+    "counterexample_count": 0,
+    "macro_calls": [
+      "macro_001"
+    ]
+  },
+  "engine": {
+    "task_count": 3,
+    "macro_count": 2,
+    "nested_dependency_graph": {
+      "macro_002": [],
+      "macro_001": [
+        "macro_002"
+      ]
+    },
+    "quarantined_macros": [],
+    "counterexample_count": 0,
+    "history_events": 2
+  }
+}

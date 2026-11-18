@@ -1,0 +1,92 @@
+{
+  "library": {
+    "task_count": 3,
+    "macro_count": 2,
+    "macros": [
+      {
+        "name": "macro_001",
+        "template": "($p1 + (x ** 2))",
+        "parameter_count": 1,
+        "discovered_in": [
+          "square_plus_five",
+          "square_plus_one",
+          "square_plus_two"
+        ],
+        "source_parameter_values": [
+          [
+            5
+          ],
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ]
+      },
+      {
+        "name": "macro_002",
+        "template": "(x ** 2)",
+        "parameter_count": 0,
+        "discovered_in": [
+          "square_plus_five",
+          "square_plus_one",
+          "square_plus_two"
+        ],
+        "source_parameter_values": [
+          []
+        ]
+      }
+    ],
+    "search_stats": {
+      "candidate_combinations": 8,
+      "unique_templates": 2,
+      "budget_exhausted": false
+    },
+    "counterexample_count": 0
+  },
+  "target_expression": "(9 + (x ** 2))",
+  "composed_execution": [
+    90,
+    13,
+    9,
+    18,
+    130
+  ],
+  "verification": {
+    "verified": true,
+    "results": [
+      {
+        "x": -9,
+        "expected": 90,
+        "predicted": 90,
+        "passed": true
+      },
+      {
+        "x": -2,
+        "expected": 13,
+        "predicted": 13,
+        "passed": true
+      },
+      {
+        "x": 0,
+        "expected": 9,
+        "predicted": 9,
+        "passed": true
+      },
+      {
+        "x": 3,
+        "expected": 18,
+        "predicted": 18,
+        "passed": true
+      },
+      {
+        "x": 11,
+        "expected": 130,
+        "predicted": 130,
+        "passed": true
+      }
+    ],
+    "counterexample_count": 0
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "mining": {
+    "source_task_count": 3,
+    "candidate_pattern_count": 1,
+    "learned_operator_count": 1,
+    "min_support_tasks": 2
+  },
+  "learned_operators": [
+    {
+      "name": "learned_op_001",
+      "expression": "(abs(x) + $p1)",
+      "parameter_count": 1,
+      "source_tasks": [
+        "absolute_plus_five",
+        "absolute_plus_one",
+        "absolute_plus_two"
+      ]
+    }
+  ],
+  "transferred_operator": "learned_op_001",
+  "target_parameter_binding": [
+    7
+  ],
+  "heldout_checks": [
+    {
+      "x": -11,
+      "expected": 18,
+      "predicted": 18,
+      "passed": true
+    },
+    {
+      "x": -2,
+      "expected": 9,
+      "predicted": 9,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "expected": 7,
+      "predicted": 7,
+      "passed": true
+    },
+    {
+      "x": 8,
+      "expected": 15,
+      "predicted": 15,
+      "passed": true
+    }
+  ],
+  "all_heldout_checks_passed": true,
+  "research_boundary": "The operator is a parameterized abstraction mined from programs already available to the miner. The target program is structurally matched to bind its parameter; this demo does not infer the target from black-box observations or invent semantics outside the DSL."
+}

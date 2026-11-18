@@ -1,0 +1,63 @@
+{
+  "engine": {
+    "task_count": 3,
+    "macro_count": 2,
+    "nested_dependency_graph": {
+      "macro_002": [],
+      "macro_001": [
+        "macro_002"
+      ]
+    },
+    "quarantined_macros": [],
+    "counterexample_count": 0,
+    "history_events": 1
+  },
+  "target": "(9 + (x ** 2))",
+  "nested_composition": "('macro_call', 'macro_001', (('const', 9),))",
+  "predictions": [
+    90,
+    13,
+    9,
+    18,
+    130
+  ],
+  "verification": {
+    "verified": true,
+    "results": [
+      {
+        "x": -9,
+        "expected": 90,
+        "predicted": 90,
+        "passed": true
+      },
+      {
+        "x": -2,
+        "expected": 13,
+        "predicted": 13,
+        "passed": true
+      },
+      {
+        "x": 0,
+        "expected": 9,
+        "predicted": 9,
+        "passed": true
+      },
+      {
+        "x": 3,
+        "expected": 18,
+        "predicted": 18,
+        "passed": true
+      },
+      {
+        "x": 11,
+        "expected": 130,
+        "predicted": 130,
+        "passed": true
+      }
+    ],
+    "counterexample_count": 0,
+    "macro_calls": [
+      "macro_001"
+    ]
+  }
+}

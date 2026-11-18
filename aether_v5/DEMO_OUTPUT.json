@@ -1,0 +1,25 @@
+{
+  "primitive": {
+    "name": "square_plus_parameter",
+    "template": "($p1 + (x ** 2))",
+    "parameter_values": [
+      1
+    ],
+    "source_expressions": [
+      "(1 + (x ** 2))",
+      "(2 + (x ** 2))"
+    ]
+  },
+  "new_task_inferred_parameters": [
+    3
+  ],
+  "held_out_verification": {
+    "verified": true,
+    "passed": 2,
+    "total": 2,
+    "predictions": [
+      28,
+      19
+    ]
+  }
+}

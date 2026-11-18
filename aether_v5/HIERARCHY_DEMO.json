@@ -1,0 +1,36 @@
+{
+  "library": {
+    "task_count": 2,
+    "macro_count": 1,
+    "macros": [
+      {
+        "name": "macro_3",
+        "expression": "(x ** 2)",
+        "discovered_in": [
+          "square_plus_one",
+          "square_plus_two"
+        ]
+      }
+    ]
+  },
+  "new_expression": "(3 + (x ** 2))",
+  "composed_structure": "(3 + macro_3(x))",
+  "probe_results": [
+    {
+      "x": -5,
+      "predicted": 28,
+      "expected": 28
+    },
+    {
+      "x": 0,
+      "predicted": 3,
+      "expected": 3
+    },
+    {
+      "x": 4,
+      "predicted": 19,
+      "expected": 19
+    }
+  ],
+  "all_probes_verified": true
+}

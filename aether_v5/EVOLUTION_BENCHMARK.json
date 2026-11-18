@@ -1,0 +1,86 @@
+{
+  "families_tested": 3,
+  "verified_families": 3,
+  "probe_accuracy": 1.0,
+  "results": [
+    {
+      "family": "square_plus_constant",
+      "source_task_count": 3,
+      "target_held_out": true,
+      "verified": true,
+      "passed": 5,
+      "total": 5,
+      "macro_count": 2,
+      "search_stats": {
+        "candidate_combinations": 8,
+        "unique_templates": 2,
+        "budget_exhausted": false
+      },
+      "symbolic_baseline": {
+        "support_examples": 3,
+        "candidate_budget": 100000,
+        "candidate_found": true,
+        "best_expression": "(9 + (x ** 2))",
+        "held_out_passed": 2,
+        "held_out_total": 2,
+        "held_out_verified": true,
+        "elapsed_seconds": 1.2968
+      }
+    },
+    {
+      "family": "absolute_plus_constant",
+      "source_task_count": 3,
+      "target_held_out": true,
+      "verified": true,
+      "passed": 5,
+      "total": 5,
+      "macro_count": 2,
+      "search_stats": {
+        "candidate_combinations": 8,
+        "unique_templates": 2,
+        "budget_exhausted": false
+      },
+      "symbolic_baseline": {
+        "support_examples": 3,
+        "candidate_budget": 100000,
+        "candidate_found": true,
+        "best_expression": "(9 - x)",
+        "held_out_passed": 0,
+        "held_out_total": 2,
+        "held_out_verified": false,
+        "elapsed_seconds": 0.9404
+      }
+    },
+    {
+      "family": "linear_plus_constant",
+      "source_task_count": 3,
+      "target_held_out": true,
+      "verified": true,
+      "passed": 5,
+      "total": 5,
+      "macro_count": 2,
+      "search_stats": {
+        "candidate_combinations": 8,
+        "unique_templates": 2,
+        "budget_exhausted": false
+      },
+      "symbolic_baseline": {
+        "support_examples": 3,
+        "candidate_budget": 100000,
+        "candidate_found": true,
+        "best_expression": "(x + (x - -9))",
+        "held_out_passed": 2,
+        "held_out_total": 2,
+        "held_out_verified": true,
+        "elapsed_seconds": 1.1983
+      }
+    }
+  ],
+  "symbolic_baseline_summary": {
+    "verified_families": 2,
+    "families_tested": 3,
+    "total_held_out_passed": 4,
+    "total_held_out": 6,
+    "total_elapsed_seconds": 3.4355
+  }
+}

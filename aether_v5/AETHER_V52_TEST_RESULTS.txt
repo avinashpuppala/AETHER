@@ -1,0 +1,36 @@
+AETHER 5.2 TEST RESULTS
+=======================
+
+Command:
+python -m unittest discover -s tests -v
+
+Result:
+Ran 41 tests
+OK
+
+New AETHER 5.2 tests: 6
+- adaptive parameter identification and disjoint test verification
+- duplicate support-input rejection
+- support/test input overlap rejection
+- inconsistent observation / no-solution handling
+- refusal to verify ambiguous parameter assignments
+- query-budget enforcement
+
+Demo:
+python aether_v52.py
+
+Demo result:
+- frozen candidate: ($p1 + (x ** 2))
+- finite parameter hypotheses at start: 65
+- selected support query: x = 0
+- synthetic oracle output: y = 9
+- remaining hypotheses: 1
+- inferred parameter: 9
+- independent test examples passed: 3 / 3
+- target expression accessed by learner: false
+
+Boundary:
+The demo oracle is synthetic. The learner performs finite-range active
+parameter identification for a frozen arithmetic template. This is not
+proof of correctness for all inputs, new-operator discovery, or general
+autonomous intelligence.

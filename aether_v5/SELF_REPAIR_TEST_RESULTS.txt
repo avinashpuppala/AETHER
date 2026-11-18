@@ -1,0 +1,31 @@
+test_counterexample_guided_verification_records_failures (test_advanced.AdvancedDiscoveryTests.test_counterexample_guided_verification_records_failures) ... ok
+test_invents_multiple_independent_parameters (test_advanced.AdvancedDiscoveryTests.test_invents_multiple_independent_parameters) ... ok
+test_invents_parameterized_shared_macro (test_advanced.AdvancedDiscoveryTests.test_invents_parameterized_shared_macro) ... ok
+test_repeated_parameter_positions_are_tied (test_advanced.AdvancedDiscoveryTests.test_repeated_parameter_positions_are_tied) ... ok
+test_requires_multiple_tasks (test_advanced.AdvancedDiscoveryTests.test_requires_multiple_tasks) ... ok
+test_reuses_parameterized_macro_on_unseen_constant (test_advanced.AdvancedDiscoveryTests.test_reuses_parameterized_macro_on_unseen_constant) ... ok
+test_save_and_load_preserve_execution (test_advanced.AdvancedDiscoveryTests.test_save_and_load_preserve_execution) ... ok
+test_search_budget_is_bounded (test_advanced.AdvancedDiscoveryTests.test_search_budget_is_bounded) ... ok
+test_finds_square_plus_one (test_discovery.DiscoveryTests.test_finds_square_plus_one) ... ok
+test_inferrs_parameter_and_checks_heldout (test_discovery.DiscoveryTests.test_inferrs_parameter_and_checks_heldout) ... ok
+test_invents_executable_parameterized_primitive (test_discovery.DiscoveryTests.test_invents_executable_parameterized_primitive) ... ok
+test_rejects_different_skeletons (test_discovery.DiscoveryTests.test_rejects_different_skeletons) ... ok
+test_rejects_inconsistent_heldout (test_discovery.DiscoveryTests.test_rejects_inconsistent_heldout) ... ok
+test_requires_multiple_examples (test_discovery.DiscoveryTests.test_requires_multiple_examples) ... ok
+test_automatic_repair_rebuilds_corrupted_macro_library (test_evolution.EvolutionEngineTests.test_automatic_repair_rebuilds_corrupted_macro_library) ... ok
+test_automatic_repair_refuses_without_counterexamples (test_evolution.EvolutionEngineTests.test_automatic_repair_refuses_without_counterexamples) ... ok
+test_benchmark_can_compare_bounded_symbolic_baseline (test_evolution.EvolutionEngineTests.test_benchmark_can_compare_bounded_symbolic_baseline) ... ok
+test_benchmark_uses_held_out_target_tasks (test_evolution.EvolutionEngineTests.test_benchmark_uses_held_out_target_tasks) ... ok
+test_compiles_nested_macro_dependencies (test_evolution.EvolutionEngineTests.test_compiles_nested_macro_dependencies) ... ok
+test_counterexample_refinement_quarantines_bad_macro (test_evolution.EvolutionEngineTests.test_counterexample_refinement_quarantines_bad_macro) ... ok
+test_nested_composition_verifies_held_out_probes (test_evolution.EvolutionEngineTests.test_nested_composition_verifies_held_out_probes) ... ok
+test_quarantine_persists_after_reload (test_evolution.EvolutionEngineTests.test_quarantine_persists_after_reload) ... ok
+test_demo_verifies_all_probes (test_hierarchy.HierarchicalTests.test_demo_verifies_all_probes) ... ok
+test_does_not_invent_macro_from_single_task (test_hierarchy.HierarchicalTests.test_does_not_invent_macro_from_single_task) ... ok
+test_mines_shared_subtree (test_hierarchy.HierarchicalTests.test_mines_shared_subtree) ... ok
+test_reuses_macro_in_new_expression (test_hierarchy.HierarchicalTests.test_reuses_macro_in_new_expression) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 2.196s
+
+OK
